@@ -1,0 +1,102 @@
+import mysql.connector
+me = mysql.connector.connect(
+    
+    host = 'localhost',
+    user = 'abc',
+    password = 'password'
+)
+
+cur = me.cursor()
+# cur.execute("create database New_Database")
+# cur.execute("create table New_Database.Information ( Name varchar(50) , Mob_No int , Reg_Id int , City_name varchar(40) , Date DATE )")
+
+# cur.execute( "select * from New_Database.Information")
+# for i in cur :
+#     print(i)
+# selecting all the coloumns from the database
+
+# cur.execute( "select Name , Mob_No , Reg_Id from New_Database.Information")
+# for i in cur :
+#     print(i)
+# selecting specific coloumns from database
+
+# cur.execute("select * from New_Database.Information where Reg_Id = 1111 ")
+# for i in cur :
+#     print(i)
+# selecting specific coloumn from database
+
+# cur.execute("select * from  New_Database.Information where Reg_Id > 5549 ")
+# for i in cur :
+#     print(i)
+# selecting specific coloumn from database based on condition
+
+# cur.execute( "select * from New_Database.Information WHERE Reg_Id = 5545  and City_name = 'delhi' ")
+# for i in cur :
+#     print(i)
+
+# cur.execute( "update New_Database.Information set Name = 'mahendra' where Reg_Id = 5554 ")
+# for i in cur :
+#     print(i)
+# Updating the value
+
+# cur.execute("select Name from New_Database.Information where Reg_Id = 5554 ")
+# for i in cur :
+#     print(i)
+
+# cur.execute("delete  from New_Database.Information where Reg_Id = 5554")
+# cur.execute("delete  from New_Database.Information where Reg_Id = 5553")
+
+
+
+# cur.execute("delete  from New_Database.Information where Reg_Id = 5555")
+# cur.execute("delete  from New_Database.Information where Reg_Id = 5553")
+# me.commit()
+
+# cur.execute( "select * from New_Database.Information")
+
+# cur.execute( "select min(Reg_Id) from New_Database.Information")
+# for i in cur :
+#     print(i)
+
+# cur.execute( "select max(Reg_Id) from New_Database.Information")
+# for i in cur :
+#     print(i)
+
+# cur.execute("select count(*) from New_Database.Information")
+# for i in cur :
+#     print(i)
+# counting a number of records in database
+
+# cur.execute( "update New_Database.Information set City_name = 'Banlore' where Reg_Id between 5545 and 5553" )
+# me.commit()
+
+# cur.execute( "select * from New_Database.Information ")
+# for i in cur :
+#     print(i)
+
+# cur.execute( "update New_Database.Information set City_name = 'Goregaon' where Reg_Id between 5549 and 5553" )
+# me.commit()
+
+# cur.execute( "select * from New_Database.Information ")
+# for i in cur :
+#     print(i)
+
+# cur.execute( "update New_Database.Information set City_name = 'Benoda' where Reg_Id between 5554 and 5556" )
+# me.commit()
+# cur.execute( "select * from New_Database.Information ")
+# for i in cur :
+#     print(i)
+
+# cur.execute("select count(*) , City_name from New_Database.Information group by city_name ")
+# for i in cur :
+#     print(i)
+
+# cur.execute("select count(*) , Date from New_Database.Information group by Date ")
+# for i in cur :
+#     print(i)
+
+# cur.execute("drop table New_Database.Information")
+# dropping table 
+
+# cur.execute("drop database New_Database")
+# Dropping database
